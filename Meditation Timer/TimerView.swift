@@ -15,7 +15,7 @@ struct TimerView: View {
     var body: some View {
         VStack {
             Text(timeString(time: currentTime))
-                .font(.largeTitle)
+                .font(.system(size: 60, design: .monospaced))
             HStack {
                 Button(action: {
                     isTimerRunning ? pauseTimer() : startTimer()
