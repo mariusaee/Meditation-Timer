@@ -16,7 +16,7 @@ class HealthKitManager {
     
     // Проверяем доступность HealthKit
     var isHealthKitAvailable: Bool {
-        return HKHealthStore.isHealthDataAvailable()
+        HKHealthStore.isHealthDataAvailable()
     }
     
     // Запрос разрешения на использование HealthKit

@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Meditation_TimerApp: App {
+    let healthKitManager = HealthKitManager.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().onAppear() {
+                healthKitManager.requestAuthorization { auth in
+                    print("HealthKit authorization: \(auth)")
+                }
+            }
         }
     }
 }
