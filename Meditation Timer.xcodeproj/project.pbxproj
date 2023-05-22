@@ -13,6 +13,7 @@
 		29DD69AF2A153BAD00284B96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29DD69AE2A153BAD00284B96 /* Preview Assets.xcassets */; };
 		29DD69B62A161B0100284B96 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DD69B52A161B0100284B96 /* TimerView.swift */; };
 		29DD69B92A162A6000284B96 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DD69B82A162A6000284B96 /* HealthKitManager.swift */; };
+		29DD69BB2A1B79B000284B96 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DD69BA2A1B79B000284B96 /* TimerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		29DD69B52A161B0100284B96 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		29DD69B72A161F8100284B96 /* Meditation Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Meditation Timer.entitlements"; sourceTree = "<group>"; };
 		29DD69B82A162A6000284B96 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		29DD69BA2A1B79B000284B96 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				29DD69A72A153BAD00284B96 /* Meditation_TimerApp.swift */,
 				29DD69A92A153BAD00284B96 /* ContentView.swift */,
 				29DD69B52A161B0100284B96 /* TimerView.swift */,
+				29DD69BA2A1B79B000284B96 /* TimerViewModel.swift */,
 				29DD69B82A162A6000284B96 /* HealthKitManager.swift */,
 				29DD69AB2A153BAD00284B96 /* Assets.xcassets */,
 				29DD69AD2A153BAD00284B96 /* Preview Content */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29DD69BB2A1B79B000284B96 /* TimerViewModel.swift in Sources */,
 				29DD69B62A161B0100284B96 /* TimerView.swift in Sources */,
 				29DD69AA2A153BAD00284B96 /* ContentView.swift in Sources */,
 				29DD69B92A162A6000284B96 /* HealthKitManager.swift in Sources */,

@@ -34,7 +34,9 @@ class HealthKitManager {
     }
     
     // Запись медитационной сессии в HealthKit
-    func saveMindfulSession(startDate: Date, endDate: Date, completion: @escaping (Bool) -> Void) {
+    func saveMindfulSession(startDate: Date,
+                            endDate: Date,
+                            completion: @escaping (Bool) -> Void) {
         guard isHealthKitAvailable else {
             completion(false)
             return
