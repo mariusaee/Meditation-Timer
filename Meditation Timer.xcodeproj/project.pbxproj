@@ -14,7 +14,18 @@
 		29DD69B62A161B0100284B96 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DD69B52A161B0100284B96 /* TimerView.swift */; };
 		29DD69B92A162A6000284B96 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DD69B82A162A6000284B96 /* HealthKitManager.swift */; };
 		29DD69BB2A1B79B000284B96 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DD69BA2A1B79B000284B96 /* TimerViewModel.swift */; };
+		29DD69CA2A1BC4F100284B96 /* TimerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DD69C92A1BC4F100284B96 /* TimerViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29DD69C42A1BC2F300284B96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29DD699C2A153BAD00284B96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29DD69A32A153BAD00284B96;
+			remoteInfo = "Meditation Timer";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		29DD69A42A153BAD00284B96 /* Meditation Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meditation Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,19 @@
 		29DD69B72A161F8100284B96 /* Meditation Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Meditation Timer.entitlements"; sourceTree = "<group>"; };
 		29DD69B82A162A6000284B96 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		29DD69BA2A1B79B000284B96 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		29DD69C02A1BC2F300284B96 /* Meditation Timer Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meditation Timer Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29DD69C92A1BC4F100284B96 /* TimerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		29DD69A12A153BAD00284B96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29DD69BD2A1BC2F300284B96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				29DD69A62A153BAD00284B96 /* Meditation Timer */,
+				29DD69C12A1BC2F300284B96 /* Meditation Timer Tests */,
 				29DD69A52A153BAD00284B96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				29DD69A42A153BAD00284B96 /* Meditation Timer.app */,
+				29DD69C02A1BC2F300284B96 /* Meditation Timer Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +100,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		29DD69C12A1BC2F300284B96 /* Meditation Timer Tests */ = {
+			isa = PBXGroup;
+			children = (
+				29DD69C92A1BC4F100284B96 /* TimerViewModelTests.swift */,
+			);
+			path = "Meditation Timer Tests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,6 +128,24 @@
 			productReference = 29DD69A42A153BAD00284B96 /* Meditation Timer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		29DD69BF2A1BC2F300284B96 /* Meditation Timer Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29DD69C62A1BC2F300284B96 /* Build configuration list for PBXNativeTarget "Meditation Timer Tests" */;
+			buildPhases = (
+				29DD69BC2A1BC2F300284B96 /* Sources */,
+				29DD69BD2A1BC2F300284B96 /* Frameworks */,
+				29DD69BE2A1BC2F300284B96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29DD69C52A1BC2F300284B96 /* PBXTargetDependency */,
+			);
+			name = "Meditation Timer Tests";
+			productName = "Meditation Timer Tests";
+			productReference = 29DD69C02A1BC2F300284B96 /* Meditation Timer Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +158,10 @@
 				TargetAttributes = {
 					29DD69A32A153BAD00284B96 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					29DD69BF2A1BC2F300284B96 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 29DD69A32A153BAD00284B96;
 					};
 				};
 			};
@@ -127,6 +179,7 @@
 			projectRoot = "";
 			targets = (
 				29DD69A32A153BAD00284B96 /* Meditation Timer */,
+				29DD69BF2A1BC2F300284B96 /* Meditation Timer Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +191,13 @@
 			files = (
 				29DD69AF2A153BAD00284B96 /* Preview Assets.xcassets in Resources */,
 				29DD69AC2A153BAD00284B96 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29DD69BE2A1BC2F300284B96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +216,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		29DD69BC2A1BC2F300284B96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29DD69CA2A1BC4F100284B96 /* TimerViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29DD69C52A1BC2F300284B96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29DD69A32A153BAD00284B96 /* Meditation Timer */;
+			targetProxy = 29DD69C42A1BC2F300284B96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		29DD69B02A153BAD00284B96 /* Debug */ = {
@@ -337,6 +413,42 @@
 			};
 			name = Release;
 		};
+		29DD69C72A1BC2F300284B96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A53U52H77W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marius.Meditation-Timer-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meditation Timer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Meditation Timer";
+			};
+			name = Debug;
+		};
+		29DD69C82A1BC2F300284B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A53U52H77W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marius.Meditation-Timer-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meditation Timer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Meditation Timer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,6 +466,15 @@
 			buildConfigurations = (
 				29DD69B32A153BAD00284B96 /* Debug */,
 				29DD69B42A153BAD00284B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29DD69C62A1BC2F300284B96 /* Build configuration list for PBXNativeTarget "Meditation Timer Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29DD69C72A1BC2F300284B96 /* Debug */,
+				29DD69C82A1BC2F300284B96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
